@@ -15,13 +15,15 @@ import {
   TabsList,
   TabsTrigger,
 } from "../../components/ui/tabs"
-import { CalendarDateRangePicker } from "../../components/ui/date-range-picker"
+import { DatePickerDemo } from "../../components/ui/datepicker"
 import { MainNav } from "../../components/ui/main-nav"
 import { Overview } from "../../components/ui/overview"
 import { RecentSales } from "../../components/ui/recent-sales"
 import { Search } from "../../components/ui/search"
 import TeamSwitcher from "../../components/ui/team-switcher"
 import { UserNav } from "../../components/ui/user-nav"
+import { Dialog } from "@/components/ui/dialog"
+import { AddMealDialog } from "@/components/ui/addmealdialog"
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -32,16 +34,16 @@ export default function DashboardPage() {
   return (
     <>
       <div className="flex flex-col">
-        {/* <div className="border-b">
+        <div className="border-b">
           <div className="flex h-16 items-center px-4">
-            <TeamSwitcher />
+            {/* <TeamSwitcher /> */}
             <MainNav className="mx-6" />
             <div className="ml-auto flex items-center space-x-4">
               <Search />
               <UserNav />
             </div>
           </div>
-        </div> */}
+        </div>
         <div className="flex-1 space-y-4 p-8 pt-6">
           <div className="flex items-center justify-between space-y-2">
             <h2 className="text-3xl font-bold tracking-tight">
@@ -53,8 +55,8 @@ export default function DashboardPage() {
               Welcome to your nutrition dashboard, Abel
             </h2>
             <div className="flex items-center space-x-2">
-              <CalendarDateRangePicker />
-              <Button>Download</Button>
+              <DatePickerDemo />
+              <AddMealDialog />
             </div>
           </div>
           <Tabs defaultValue="overview" className="space-y-4">
