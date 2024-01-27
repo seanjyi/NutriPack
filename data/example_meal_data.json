@@ -1,0 +1,25 @@
+{
+    "John Smith" : {
+        "meal_date" : "1/26/2024",
+        "meals" : [
+            {
+                "name" : "Meal-1",
+                "foods" : [
+                    "Lentils with Pineapple",
+                    "Dijon Rosemary Pork Loin"
+                ],
+                "meal_session" : "Lunch",
+                "meal_location" : "Fountain"
+            },
+            {
+                "name" : "Meal-2",
+                "foods" : [
+                    "Lentils with Pineapple",
+                    "Dijon Rosemary Pork Loin"
+                ],
+                "meal_session" : "Dinner",
+                "meal_location" : "Fountain"
+            }
+        ]
+    }
+}
