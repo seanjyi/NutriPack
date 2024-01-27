@@ -24,6 +24,7 @@ import { UserNav } from "../../components/ui/user-nav"
 import { Dialog } from "@/components/ui/dialog"
 import { AddMealDialog } from "@/components/ui/addmealdialog"
 import { FoodProportionsBarChart } from "@/components/ui/foodproportionsbarchart"
+import { PopularThisWeek } from "@/components/ui/popularthisweek"
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -52,11 +53,10 @@ export default function DashboardPage() {
                 ←
                 </span>
               </a>
-              Welcome to your nutrition dashboard, Abel
+              This week at NCSU dining...
             </h2>
             <div className="flex items-center space-x-2">
               <DatePickerDemo />
-              <AddMealDialog />
             </div>
           </div>
           <Tabs defaultValue="overview" className="space-y-4">
@@ -70,32 +70,7 @@ export default function DashboardPage() {
                 <Card>
                   <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle className="text-sm font-medium">
-                      Calories
-                    </CardTitle>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="h-4 w-4 text-muted-foreground"
-                    >
-                      <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                    </svg>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-2xl font-bold">2130</div>
-                    <p className="text-xs text-muted-foreground">
-                      +5.1% from yesterday
-                    </p>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                    <CardTitle className="text-sm font-medium">
-                      Protein
+                      Total meals reported
                     </CardTitle>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -113,15 +88,15 @@ export default function DashboardPage() {
                     </svg>
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold">80g</div>
+                    <div className="text-2xl font-bold">6,420</div>
                     <p className="text-xs text-muted-foreground">
-                      +20.8% from yesterday
+                      +11.5% from last week
                     </p>
                   </CardContent>
                 </Card>
                 <Card>
                   <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                    <CardTitle className="text-sm font-medium">Carbohydrates</CardTitle>
+                    <CardTitle className="text-sm font-medium">Total servings reported</CardTitle>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -137,16 +112,41 @@ export default function DashboardPage() {
                     </svg>
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold">134g</div>
+                    <div className="text-2xl font-bold">17,933</div>
                     <p className="text-xs text-muted-foreground">
-                      -10.5% from yesterday
+                      +10.5% from last week
                     </p>
                   </CardContent>
                 </Card>
                 <Card>
                   <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle className="text-sm font-medium">
-                      Fats
+                      Projected carbon output
+                    </CardTitle>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      className="h-4 w-4 text-muted-foreground"
+                    >
+                      <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                    </svg>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="text-2xl font-bold">21,680kg</div>
+                    <p className="text-xs text-muted-foreground text-green-600">
+                      -15.1% from last week
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                    <CardTitle className="text-sm font-medium">
+                      Inventory status
                     </CardTitle>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -162,9 +162,9 @@ export default function DashboardPage() {
                     </svg>
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold">59g</div>
+                    <div className="text-2xl font-bold text-green-600">Green</div>
                     <p className="text-xs text-muted-foreground">
-                      -8.3% from yesterday
+                      No issues reported
                     </p>
                   </CardContent>
                 </Card>
@@ -172,7 +172,7 @@ export default function DashboardPage() {
               <div className="grid gap-4  grid-cols-1 md:grid-cols-2 lg:grid-cols-7">
                 <Card className="md:col-span-2 col-span-1 lg:col-span-4">
                   <CardHeader>
-                    <CardTitle>Caloric Intake</CardTitle>
+                    <CardTitle>Total servings breakdown</CardTitle>
                   </CardHeader>
                   <CardContent className="pl-2">
                     <FoodProportionsBarChart></FoodProportionsBarChart>
@@ -180,13 +180,13 @@ export default function DashboardPage() {
                 </Card>
                 <Card className="col-span-1 md:col-span-2 lg:col-span-3">
                   <CardHeader>
-                    <CardTitle>Recent Meals</CardTitle>
+                    <CardTitle>Popular this week</CardTitle>
                     {/* <CardDescription>
                       You made 265 sales this month.
                     </CardDescription> */}
                   </CardHeader>
                   <CardContent>
-                    <RecentSales />
+                    <PopularThisWeek />
                   </CardContent>
                 </Card>
               </div>
