@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  frontend:
+    build: ./frontend
+    restart: unless-stopped
+    ports:
+    - "3000:3000"
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    volumes:
+    - ./data:/backend/data
+    ports:
+    - "5000:5000"
