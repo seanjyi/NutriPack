@@ -17,13 +17,13 @@ import {
 } from "../../components/ui/tabs"
 import { DatePickerDemo } from "../../components/ui/datepicker"
 import { MainNav } from "../../components/ui/main-nav"
-import { CaloricIntakeBarChart } from "../../components/ui/caloricintakebarchart"
 import { RecentSales } from "../../components/ui/recent-sales"
 import { Search } from "../../components/ui/search"
 import TeamSwitcher from "../../components/ui/team-switcher"
 import { UserNav } from "../../components/ui/user-nav"
 import { Dialog } from "@/components/ui/dialog"
 import { AddMealDialog } from "@/components/ui/addmealdialog"
+import { FoodProportionsBarChart } from "@/components/ui/foodproportionsbarchart"
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -175,7 +175,7 @@ export default function DashboardPage() {
                     <CardTitle>Caloric Intake</CardTitle>
                   </CardHeader>
                   <CardContent className="pl-2">
-                    <CaloricIntakeBarChart />
+                    <FoodProportionsBarChart></FoodProportionsBarChart>
                   </CardContent>
                 </Card>
                 <Card className="col-span-1 md:col-span-2 lg:col-span-3">
