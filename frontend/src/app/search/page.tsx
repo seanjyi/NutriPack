@@ -11,6 +11,7 @@ import { Card, CardTitle, CardHeader, CardDescription, CardContent, CardFooter }
 import { LocationSelect } from "./locationselect";
 import { MealtimeSelect } from "./mealtimeselect";
 import { SearchDatePicker } from "./datepicker";
+import { ResultsTable } from "./results";
 
 
 export default function SearchPage() {
@@ -262,6 +263,7 @@ export default function SearchPage() {
             </Card>
 
             )}
+            <ResultsTable data={{poop: true}}/>
         </main>
     );
 }
