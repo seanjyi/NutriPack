@@ -116,7 +116,15 @@ export default function SearchPage() {
     }, [date, mealtime, location, dietViolations, allergenViolations, nutrientViolations]);
 
     return (
+        
         <main className="flex min-h-screen flex-col items-center p-24">
+            <a className="pr-9 place-self-start" href="/">
+                <h2 className="text-3xl font-bold tracking-tight">
+                    <span className="text-red-500 inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                    ←
+                    </span>
+                </h2>
+              </a>
             <div className="flex flex-col place-items-center">
                 <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-6xl pb-8">
                 Find your next <span className="bg-gradient-to-r from-red-500 to-red-600 text-transparent bg-clip-text">meal</span>

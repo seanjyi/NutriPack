@@ -272,14 +272,17 @@ export function ResultsTable(props: ResultsTableProps) {
     return (
         <>
         <table>
-            <tr className="border-b-4">
-                <th className="w-[256px] text-start">Item</th>
-                <th className="w-[100px] text-start">Calories</th>
-                <th className="w-[100px] text-start">Protein</th>
-                <th className="w-[100px] text-start">Fats</th>
-                <th className="w-[100px] text-start">Carbs</th>
-                <th className="w-[512px] text-start">Dietary Information</th>
-            </tr>
+            <thead>
+                <tr className="border-b-4">
+                    <th className="w-[256px] text-start">Item</th>
+                    <th className="w-[100px] text-start">Calories</th>
+                    <th className="w-[100px] text-start">Protein</th>
+                    <th className="w-[100px] text-start">Fats</th>
+                    <th className="w-[100px] text-start">Carbs</th>
+                    <th className="w-[512px] text-start">Dietary Information</th>
+                </tr>
+            </thead>
+            <tbody>
             {
                 Object.keys(mockData).map((key) => {
                     const foodItem = mockData[key as keyof typeof mockData];
@@ -297,6 +300,7 @@ export function ResultsTable(props: ResultsTableProps) {
                     )
                 })
             }
+            </tbody>
         </table>
         </>
     );
