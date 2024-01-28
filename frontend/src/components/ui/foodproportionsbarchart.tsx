@@ -6,44 +6,51 @@ const foodData = [
   {
     name: '1/23',
     salad: 4000,
-    grill: 2400,
-    amt: 2400,
+    grill: 6400,
+    simplyMade: 2200,
+    dessert: 2400,
   },
   {
     name: '1/24',
     salad: 3000,
-    grill: 1398,
-    amt: 2210,
+    grill: 8300,
+    simplyMade: 1700,
+    dessert: 2200,
   },
   {
     name: '1/25',
-    salad: 2000,
+    salad: 3000,
     grill: 9800,
-    amt: 2290,
+    simplyMade: 2200,
+    dessert: 2290,
   },
   {
     name: '1/26',
-    salad: 2780,
-    grill: 3908,
-    amt: 2000,
+    salad: 4780,
+    grill: 9908,
+    simplyMade: 2400,
+    dessert: 2000,
   },
   {
     name: '1/27',
     salad: 1890,
     grill: 4800,
-    amt: 2181,
+    simplyMade: 1200,
+    dessert: 2180,
   },
   {
     name: '1/28',
-    salad: 2390,
+    salad: 1390,
     grill: 3800,
-    amt: 2500,
+    simplyMade: 1400,
+    dessert: 2500,
   },
   {
     name: '1/29',
     salad: 3490,
-    grill: 4300,
-    amt: 2100,
+    grill: 9300,
+    simplyMade: 2200,
+    dessert: 2100,
   },
 ];
 
@@ -121,6 +128,20 @@ export function FoodProportionsBarChart() {
         <Bar
           dataKey="salad"
           fill="#6F7D1C"
+          stackId="stack"
+          radius={[0, 0, 0, 0]}
+          // className="fill-primary"
+        />
+        <Bar
+          dataKey="simplyMade"
+          fill="#bb0"
+          stackId="stack"
+          radius={[0, 0, 0, 0]}
+          // className="fill-primary"
+        />
+        <Bar
+          dataKey="dessert"
+          fill="#964B00"
           stackId="stack"
           radius={[0, 0, 0, 0]}
           // className="fill-primary"
