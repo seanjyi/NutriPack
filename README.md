@@ -30,7 +30,7 @@ Tracks the user's data so that they can make informed decisions. User would be a
 ### Sustainability Page
 Through comparing the amount of meals reported by users with the amount of food produced, dining halls could be informed of the projected carbon output from food usage and food waste. Metrics that would be tracked:
 - Totals meals and servings reported
-- Project carbon output
+- Projected carbon output
 - Total servings based off dining halls food category by the past 7 days
 - Popular foods of the week
 
