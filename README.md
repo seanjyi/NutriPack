@@ -33,6 +33,6 @@ Through using the amount of meals reported by users, dining halls could be infor
 <img src="https://github.com/seanjyi/NutriPack/assets/80228469/986dc1a6-78c6-44c4-97a8-dac77be269e0" width="800">  
 
 ### Search Page
-Search page for students to find meals within the dining halls according to their diet, allergens, and nutrition. 
+Search page for students to find meals within the dining halls according to their diet, allergens, and nutrients. 
 
 <img src="https://github.com/seanjyi/NutriPack/assets/80228469/f44b8132-8cf4-45b9-a238-7dee19cf01e9" width="800">  
