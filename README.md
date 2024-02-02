@@ -31,7 +31,7 @@ Tracks the user's data so that they can make informed decisions. User would be a
 Through comparing the amount of meals reported by users with the amount of food produced, dining halls could be informed of the projected carbon output from food usage and food waste. Metrics that would be tracked:
 - Totals meals and servings reported
 - Project carbon output
-- Total servings based off dining halls food category by the past 7 days: salad, simplyMade, dessert, and grill
+- Total servings based off dining halls food category by the past 7 days
 - Popular foods of the week
 
 <img src="https://github.com/seanjyi/NutriPack/assets/80228469/986dc1a6-78c6-44c4-97a8-dac77be269e0" width="800">  
