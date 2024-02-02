@@ -28,7 +28,11 @@ Tracks the user's data so that they can make informed decisions. User would be a
 <img src="https://github.com/seanjyi/NutriPack/assets/80228469/bf54f219-7738-49bd-a779-049b620007e3" width="800">  
 
 ### Sustainability Page
-Through using the amount of meals reported by users, dining halls could be informed of the project carbon output they are producing.     
+Through comparing the amount of meals reported by users with the amount of food produced, dining halls could be informed of the projected carbon output from food usage and food waste. Metrics that would be tracked:
+- Totals meals and servings reported
+- Project carbon output
+- Total servings based off dining halls food category by the past 7 days: salad, simplyMade, dessert, and grill
+- Popular foods of the week
 
 <img src="https://github.com/seanjyi/NutriPack/assets/80228469/986dc1a6-78c6-44c4-97a8-dac77be269e0" width="800">  
 
